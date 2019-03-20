@@ -1,0 +1,1 @@
+{"version":3,"file":"main.6056d3a1fd2acf1a0030.bundle.js","sources":["webpack:///./src/stories/Switch/storie.js"],"sourcesContent":["import { storiesOf } from '@storybook/react';\nimport Switch from './Switch';\n\nstoriesOf('Common/Header', module)\n  .add('Default', Switch());\n"],"mappings":"AAAA","sourceRoot":""}
