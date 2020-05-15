@@ -1,0 +1,41 @@
+import { Meta, Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+
+import { Select } from "../src";
+import mock from "../mock/select.option";
+import { WrapperComponent } from "../helpers";
+
+<Meta title="Elements/Select" component={Select} />
+
+# Select Simple
+
+```ts
+  import { Select } from "../src";
+```
+
+Select Simple Component in ***React JS***
+
+<Preview withToolbar>
+  <Story name="Select Simple"
+    parameters={{
+      design: {
+        type: 'figma',
+        url: 'https://www.figma.com/file/FTIRvNJB1P95w38ZXMUIKv/Desing?node-id=61%3A3'
+      }
+    }}
+  >
+    <WrapperComponent>
+      <Select options={mock} selected={(value) => action('selected')(value)} />
+    </WrapperComponent>
+  </Story>
+</Preview>
+
+**Without data**
+
+<Preview withToolbar>
+  <Select options={[]} selected={(value) => action('selected')(value)} />
+</Preview>
+
+## Props
+
+<Props of={Select} />
